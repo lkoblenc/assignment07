@@ -1,0 +1,44 @@
+# Taxonomy 
+
+- Home Page (What is your favorite house from Game of Thrones)
+  - nav bar (logo, home, learn more about house names (dropdown menu) )
+  - Full length background image
+  - Some intro Text
+  - Fill out survey button 
+- House 1
+  - nav bar (logo, home, learn more about house names (dropdown menu) )
+  - house logo
+  - description
+  - Notable Characters
+  -  picture 
+  - description  
+  - NEXT Button 
+
+- House 2
+  - nav bar (logo, home, learn more about house names (dropdown menu) )
+  - house logo
+  - description
+  - Notable Characters
+  -  picture 
+  - description  
+  - BACK/NEXT Button
+- House 3
+  - nav bar (logo, home, learn more about house names (dropdown menu) )
+  - house logo
+  - description
+  - Notable Characters
+  -  picture 
+  - description  
+  - BACK/NEXT Button
+- House 4
+  - nav bar (logo, home, learn more about house names (dropdown menu) )
+  - house logo
+  - description
+  - Notable Characters
+  -  picture 
+  - description  
+  - BACK/NEXT Button
+- Survey
+  - nav bar (logo, home, learn more about house names (dropdown menu) )
+  - Survey Questions 
+  - Submit
