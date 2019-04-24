@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Game of Thrones|Survey</title>
+</head>
+<body>
+
+	<header>
+		<a href="index.html">
+			<img src="images/gameofthroneslogo.png" alt="GOT Logo">
+		</a>
+		<nav>
+			<ul>
+				<li>Home</li>
+				<li>Learn More
+					<ul>
+						<li>House Stark</li>
+						<li>House Targaryen</li>
+						<li>House Lannister</li>
+						<li>House Greyjoy</li>
+					</ul>
+				</li>
+				<li>Admin Login</li>
+			</ul>
+		</nav>
+	</header>
+
+	<form method="post" action="form-processor.php">
+	<fieldset>
+		<legend>Personal Information</legend>
+		<label for="firstname">First Name:</label><br>
+  		<input type="text" name="firstname" id="firstname" placeholder="First Name">
+  		<br>
+  		
+  		<label for="lastname">Last Name:</label><br>
+  		<input type="text" name="lastname" id="lastname" placeholder="Last Name">
+  		<br>
+  		
+  		<label for="email">Email:</label><br>
+  		<input type="email" name="email" id="email" placeholder="Email"><br>
+
+  		<label for="city">City:</label><br>
+  		<input type="text" name="city" id="city" placeholder="City"><br>
+
+  		<label for="state">State:</label><br>
+  		<input type="text" name="state" id="state" placeholder="State"><br>
+
+	</fieldset><br><br>
+
+	<fieldset>
+		<legend>Survey</legend>
+			<h2>What is your favorite house from Game of Thrones?</h2>
+  			<input type="radio" name="favorite" id="stark"><label for="stark">House Stark</label><br>
+
+  			<input type="radio" name="favorite" id="targaryen"><label for="targaryen">House Targaryen</label><br>
+
+  			<input type="radio" name="favorite" id="lannister"><label for="lannister">House Lannister</label><br>
+
+  			<input type="radio" name="favorite" id="greyjoy"><label for="greyjoy">House Greyjoy</label><br>
+
+  			<input type="radio" name="favorite" id="other"><label for="other">Other</label>
+
+  			<h2>What native species have you heard about?</h2>
+
+  			<input type="checkbox" name="threetoedsloth" id="threetoedsloth" value="Three-Toed-Sloth">
+        <label for="threetoedsloth">Three Toed Sloth</label><br>
+  	
+  			<input type="checkbox" name="howlermonkey" id="howlermonkey" value="Howler-Monkey">
+        <label for="howlermonkey">Howler Monkey</label><br>
+  			
+
+         
+  			<input type="checkbox" name="redeyedtreefrog" id="redeyedtreefrog" value="Red-Eyed-Tree-Frog">
+  			 <label for="redeyedtreefrog">Red Eyed Tree Frog</label><br>
+
+          
+  			<input type="checkbox" name="oliveridleyseaturtle" id="oliveridleyseaturtle" value="Olive-Ridley-Sea-Turtle">
+        <label for="oliveridleyseaturtle">Olive Ridley Sea Turtle</label><br>
+  			
+
+        
+  			<input type="checkbox" name="jabiru" id="jabiru" value="Jabiru">
+        <label for="jabiru">Jabiru</label>
+	</fieldset><br><br>
+
+	<label for ="comments">Do yout think Chimamanda is a man hater?</label><br>
+	<textarea name="comments" id="comments"></textarea><br><br>
+
+	<input type="Submit" name="submit" value="Thank You"> <br>
+</form>
+
+
+</body>
+</html>
