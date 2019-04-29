@@ -5,21 +5,21 @@
 </head>
 <body>
 	<header>
-		<a href="index.html">
+		<a href="index.php">
 			<img src="images/gameofthroneslogo.png" alt="GOT Logo">
 		</a>
 		<nav>
 			<ul>
-				<li><a href="index.html">Home</a></li>
+				<li><a href="index.php">Home</a></li>
 				<li>Learn More
 					<ul>
-						<li><a href="stark.html">House Stark</a></li>
-						<li><a href="targaryen.html">House Targaryen</a></li>
-						<li><a href="lannister.html">House Lannister</a></li>
-						<li><a href="greyjoy.html">House Greyjoy</a></li>
+						<li><a href="stark.php">House Stark</a></li>
+						<li><a href="targaryen.php">House Targaryen</a></li>
+						<li><a href="lannister.php">House Lannister</a></li>
+						<li><a href="greyjoy.php">House Greyjoy</a></li>
 					</ul>
 				</li>
-				<li><a href="login.html">Admin Login</a></li>
+				<li><a href="login.php">Admin Login</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -72,17 +72,17 @@
 	</article>
 	<div>
 		<nav>
-			<a href="stark.html">Back</a>
+			<a href="stark.php">Back</a>
 		</nav>
 	</div>
 	<div>
 		<nav>
-			<a href="survey.html">Fill Out Survey!</a>
+			<a href="survey.php">Fill Out Survey!</a>
 		</nav>
 	</div>
 	<div>
 		<nav>
-			<a href="lannister.html">Next</a>
+			<a href="lannister.php">Next</a>
 		</nav>
 	</div>
 	<footer>
