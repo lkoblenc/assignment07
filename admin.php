@@ -9,20 +9,9 @@
 		<a href="index.html">
 			<img src="images/gameofthroneslogo.png" alt="GOT Logo">
 		</a>
-		<nav>
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li>Learn More
-					<ul>
-						<li><a href="stark.html">House Stark</a></li>
-						<li><a href="targaryen.html">House Targaryen</a></li>
-						<li><a href="lannister.html">House Lannister</a></li>
-						<li><a href="greyjoy.html">House Greyjoy</a></li>
-					</ul>
-				</li>
-				<li><a href="login.html">Admin Login</a></li>
-			</ul>
-		</nav>
+
+<?php include "inc/head.inc" ?>
+
 	</header>
 
 	<section>

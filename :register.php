@@ -101,23 +101,12 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 <body>
 
 	<header>
-		<a href="index.html">
+		<a href="index.php">
 			<img src="images/gameofthroneslogo.png" alt="GOT Logo">
 		</a>
-		<nav>
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li>Learn More
-					<ul>
-						<li><a href="stark.html">House Stark</a></li>
-						<li><a href="targaryen.html">House Targaryen</a></li>
-						<li><a href="lannister.html">House Lannister</a></li>
-						<li><a href="greyjoy.html">House Greyjoy</a></li>
-					</ul>
-				</li>
-				<li><a href="login.html">Admin Login</a></li>
-			</ul>
-		</nav>
+
+<?php include "inc/head.inc" ?>
+
 	</header>
 	<section>
 		<h1>Sign Up!</h1>
@@ -135,7 +124,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
             <input type="submit" value="Submit">
 
-            <p>Already have an account? <a href="login.html">Login here</a>.</p>
+            <p>Already have an account? <a href="login.php">Login here</a>.</p>
 			
 		</form>
 

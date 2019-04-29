@@ -1,12 +1,6 @@
 <?php
 session_start();
  
-// Check if the user is already logged in, if yes then redirect him to index page
-if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
-  header("location: index.php");
-  exit;
-}
- 
 // Include config file
 require_once "connect-db.php";
  
@@ -34,7 +28,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     // Validate credentials
     if(empty($username_err) && empty($password_err)){
         // Prepare a select statement
-        $sql = "SELECT id, username, password FROM yding_users WHERE username = ?";
+        $sql = "SELECT id, username, password FROM users WHERE username = ?";
         
         if($stmt = mysqli_prepare($connection, $sql)){
             // Bind variables to the prepared statement as parameters
@@ -97,20 +91,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 		<a href="index.php">
 			<img src="images/gameofthroneslogo.png" alt="GOT Logo">
 		</a>
-		<nav>
-			<ul>
-				<li><a href="index.php">Home</a></li>
-				<li>Learn More
-					<ul>
-						<li><a href="stark.php">House Stark</a></li>
-						<li><a href="targaryen.php">House Targaryen</a></li>
-						<li><a href="lannister.php">House Lannister</a></li>
-						<li><a href="greyjoy.php">House Greyjoy</a></li>
-					</ul>
-				</li>
-				<li><a href="login.php">Admin Login</a></li>
-			</ul>
-		</nav>
+
+<?php include "inc/head.inc" ?>
+
 	</header>
 	<section>
 		<h1>Admin Login</h1>
