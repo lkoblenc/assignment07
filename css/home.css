@@ -1,3 +1,7 @@
+/************
+	BASE
+************/
+
 .home {
 	background-image: url(../images/gotbackground.jpeg);
 	background-size: contain;
@@ -33,11 +37,6 @@
 	font-size: 18px;
 }
 
-.snow::first-letter {
-	font-size: 300%;
-	color: brown;
-}
-
 .login {
 	float: right;
 	text-decoration: none;
@@ -52,6 +51,20 @@
 	box-shadow: 0 9px #999;
 	font-weight: bold;
 }
+
+
+
+/************
+   MODULE
+************/
+
+
+.snow::first-letter {
+	font-size: 300%;
+	color: brown;
+}
+
+
 
 .login:hover{
 	background-color: white;

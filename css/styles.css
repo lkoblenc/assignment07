@@ -1,43 +1,35 @@
+/***************
+	  BASE
+***************/
+
+footer{
+	background-color: #363636;
+	color: #997950;
+	text-align: center;
+	font-size: 15px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	font-family: "Arial Black", Gadget, sans-serif;
+	margin-top: 290px;
+}
+
+h1{
+	color: #FAD172;
+	border-bottom-style: solid;
+	
+}
 
 .global{
 	background-color: black;
 	color: white;
 }
 
+.container{
+	margin: 0 auto;
+	width: 95%;
+	max-width: 960px;
 
-.global header{
-	background-color: brown;
 }
-
-
-.global .house{
-	float: right;
-	text-decoration: none;
-	color: white ;
-	font-size: 20px;
-	padding: 10px 15px;
-	text-align: center; 
-	outline: none;
-	border: none;
-	border-radius: 15px;
-	box-shadow: 0 4px white;
-	font-weight: bold;
-}
-
-.global .house2{
-	text-decoration: none;
-	color: white ;
-	font-size: 20px;
-	padding: 10px 15px;
-	text-align: right; 
-	font-weight: bold;
-}
-
-
-.global h1.team{
-	text-align: center;
-}
-
 .newnav{
 	display: grid;
 	grid-gap: 10px;
@@ -46,12 +38,6 @@
 
 
 
-.container{
-	margin: 0 auto;
-	width: 95%;
-	max-width: 960px;
-
-}
 
 
 .container2{
@@ -117,22 +103,6 @@
 	display: flex;
 }
 
-
-.row .pic4{
-	margin-top: 100px;
-}
-
-h1{
-	color: #FAD172;
-	border-bottom-style: solid;
-	
-}
-
-.fill, form a{
-	color: #FAD172;
-	text-decoration: none;
-}
-
 .fill{
 	text-decoration: none;
 	color: brown;
@@ -148,32 +118,83 @@ h1{
 
 }
 
-.fill:hover{
-	background-color: brown;
-	color: white;
-}
-
 .box{
 	margin-top: 100px;
 }
 
 
 
-footer{
-	background-color: #363636;
-	color: #997950;
-	text-align: center;
-	font-size: 15px;
-	padding-top: 50px;
-	padding-bottom: 50px;
-	font-family: "Arial Black", Gadget, sans-serif;
-	margin-top: 290px;
+
+/***************
+	  Module
+***************/
+
+.global header{
+	background-color: brown;
 }
+
+
+.global .house{
+	float: right;
+	text-decoration: none;
+	color: white ;
+	font-size: 20px;
+	padding: 10px 15px;
+	text-align: center; 
+	outline: none;
+	border: none;
+	border-radius: 15px;
+	box-shadow: 0 4px white;
+	font-weight: bold;
+}
+
+.global .house2{
+	text-decoration: none;
+	color: white ;
+	font-size: 20px;
+	padding: 10px 15px;
+	text-align: right; 
+	font-weight: bold;
+}
+
+
+.global h1.team{
+	text-align: center;
+}
+
+
+
+
+
+.row .pic4{
+	margin-top: 100px;
+}
+
+
+
+.fill, form a{
+	color: #FAD172;
+	text-decoration: none;
+}
+
+.fill:hover{
+	background-color: brown;
+	color: white;
+}
+
+
 
 footer a{
 	text-decoration: none;
 	color: white;
 }
+
+
+
+
+
+
+
 
 
 
