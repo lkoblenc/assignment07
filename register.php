@@ -1,3 +1,6 @@
+
+
+
 <?php
 // Include config file
 require_once "connect-db.php";
@@ -93,24 +96,13 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 }
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<title>Game of Thrones|Register</title>
-</head>
-<body>
+<?php include 'inc/header.php';?>
 
-	<header>
-		<a href="index.php">
-			<img src="images/gameofthroneslogo.png" alt="GOT Logo">
-		</a>
-
-<?php include "inc/head.inc" ?>
-
-	</header>
-	<section>
+	<div class="container2">
+	<div class="form">
 		<h1>Sign Up!</h1>
-        <p>Please fill this form to create an account.</p>
+        <div class="credentials">Please fill this form to create an account</div>
+        <br>
         <form method="post" action="#">
 
 			<label>Username</label><br>
@@ -124,17 +116,16 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
             <input type="submit" value="Submit">
 
-            <p>Already have an account? <a href="login.php">Login here</a>.</p>
+            <div class="account">Already have an account? <a href="login.php">Login here</a>.</div>
 			
 		</form>
+	</div>
+		<div class="pic">
+			<img src="images/registerpic.jpg" alt="Register Picture">
+		</div>	
+	</div>
+	
+<?php include 'inc/footer.php';?>
 
-	</section>
-	<footer>
-		<cite>This website was created by team Rochester.</cite>
-		<div>Content gathered from <a href="gameofthrones.fandom.com">gameofthrones.fandom.com</a>, <a href="awoiaf.westeros.org">awoiaf.westeros.org</a>, and <a href="en.wikipedia.org/wiki/Game_of_Thrones">wikipedia.org</a>.</div>
-		<div>
-			CSC 174 | Advance Front-End Web Developement
-		</div>
-	</footer>
 </body>
 </html>

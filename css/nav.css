@@ -1,0 +1,62 @@
+.dropdown {
+  display: none;
+  position: absolute;
+  background-color: brown;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.house2 .dropdown{
+	display: none;
+  position: absolute;
+  background-color: brown;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.global .dropdown{
+	background-color: #997950;
+	right: 8px;
+}
+
+.global .house2 .dropdown{
+	background-color: #997950;
+	right: 8px;
+}
+
+.dropdown a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.house2 .dropdown a{
+	float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+
+.dropdown a:hover {
+  background-color: #ddd;
+}
+
+.house2 .dropdown a:hover {
+  background-color: #ddd;
+}
+
+.house:hover .dropdown {
+	display: block;
+}
+
+.house2:hover .dropdown {
+	display: block;
+}

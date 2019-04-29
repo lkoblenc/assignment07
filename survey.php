@@ -1,20 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<title>Game of Thrones|Survey</title>
-</head>
-<body>
+<?php include 'inc/surveyheader.php';?>
 
-	<header>
-		<a href="index.php">
-			<img src="images/gameofthroneslogo.png" alt="GOT Logo">
-		</a>
-
-<?php include "inc/head.inc" ?>
-
-	</header>
-
-	<section>
+	<section class="container">
 	<form method="post" action="form-processor.php">
 	<fieldset>
 		<legend>Personal Information</legend>
@@ -39,6 +25,11 @@
 
 	<fieldset>
 		<legend>Survey</legend>
+    <div class="container3">
+      <div><img class="pic3" src="images/gotbackground.jpeg" align="house greyjoy"></div>
+      <div><img class="pic3" src="images/loginpic.jpg" alt="Login Picture"></div>
+      <div><img class="pic3" src="images/registerpic.jpg" alt="Register Picture"></div>
+      <div> 
 			<h2>What is your favorite house from Game of Thrones?</h2>
   			<input type="radio" name="favorite" id="stark"><label for="stark">House Stark</label><br>
 
@@ -49,7 +40,9 @@
   			<input type="radio" name="favorite" id="greyjoy"><label for="greyjoy">House Greyjoy</label><br>
 
   			<input type="radio" name="favorite" id="other"><label for="other">Other</label>
-
+      </div>
+      
+      <div>  
   			<h2>Who are your top 5 favorite Game of Thrones characters?</h2>
 
   			<input type="checkbox" name="ned" id="ned">
@@ -108,7 +101,9 @@
           
   			<input type="checkbox" name="balon" id="balon">
         <label for="balon">Balon Greyjoy</label><br>
+      </div>
 
+      <div>
         <h2>Who are your 5 least favorite Game of Thrones characters? </h2>
 
   			<input type="checkbox" name="ned" id="ned">
@@ -167,7 +162,7 @@
           
   			<input type="checkbox" name="balon" id="balon">
         <label for="balon">Balon Greyjoy</label><br>
-
+      </div>
 	</fieldset><br><br>
 
 	<label for="moment">Favorite Game of Throne Moment:</label><br>
@@ -178,13 +173,7 @@
 </form>
 </section>
 
-<footer>
-		<cite>This website was created by team Rochester.</cite>
-		<div>Content gathered from <a href="gameofthrones.fandom.com">gameofthrones.fandom.com</a>, <a href="awoiaf.westeros.org">awoiaf.westeros.org</a>, and <a href="en.wikipedia.org/wiki/Game_of_Thrones">wikipedia.org</a>.</div>
-		<div>
-			CSC 174 | Advance Front-End Web Developement
-		</div>
-	</footer>
+<?php include 'inc/footer.php';?>
 
 </body>
 </html>

@@ -1,0 +1,60 @@
+.home {
+	background-image: url(../images/gotbackground.jpeg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 1000px;
+	font-family: "Arial Black", Gadget, sans-serif;
+}
+
+.homebody{
+	background-color: black;
+}
+
+
+.house{
+	float: right;
+	text-decoration: none;
+	color: white;
+	font-size: 18px;
+	padding: 10px 15px;
+	text-align: center; 
+	outline: none;
+	border: none;
+	border-radius: 15px;
+	box-shadow: 0 9px #999;
+	font-weight: bold;
+}
+
+.snow {
+	text-decoration: none;
+	color: white;
+	margin-top: 440px;
+	font-size: 18px;
+}
+
+.snow::first-letter {
+	font-size: 300%;
+	color: brown;
+}
+
+.login {
+	float: right;
+	text-decoration: none;
+	color: white;
+	font-size: 18px;
+	padding: 10px 25px;
+	text-align: center; 
+	outline: none;
+	background-color: brown;
+	border: none;
+	border-radius: 15px;
+	box-shadow: 0 9px #999;
+	font-weight: bold;
+}
+
+.login:hover{
+	background-color: white;
+	color: brown;
+}
+

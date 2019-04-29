@@ -1,0 +1,183 @@
+
+.global{
+	background-color: black;
+	color: white;
+}
+
+
+.global header{
+	background-color: brown;
+}
+
+
+.global .house{
+	float: right;
+	text-decoration: none;
+	color: white ;
+	font-size: 20px;
+	padding: 10px 15px;
+	text-align: center; 
+	outline: none;
+	border: none;
+	border-radius: 15px;
+	box-shadow: 0 4px white;
+	font-weight: bold;
+}
+
+.global .house2{
+	text-decoration: none;
+	color: white ;
+	font-size: 20px;
+	padding: 10px 15px;
+	text-align: right; 
+	font-weight: bold;
+}
+
+
+.global h1.team{
+	text-align: center;
+}
+
+.newnav{
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+
+.container{
+	margin: 0 auto;
+	width: 95%;
+	max-width: 960px;
+
+}
+
+
+.container2{
+	margin: 0 auto;
+	width: 90%;
+	max-width: 960px;
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: 1fr 1fr;
+}
+
+.container3{
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.container2 h2::first-letter {
+	font-size: 300%;
+	color: brown;
+}
+
+.credentials, form{
+	padding-top: 20px;
+	font-size: 20px;
+}
+
+.account{
+	padding-top: 20px;
+}
+
+
+.pic{
+	border: 2px solid brown;
+	border-radius: 4px;
+	width: 500px;
+	height: 360px;
+  	margin-top: 100px;
+}
+
+.pic2{
+	border: 2px solid brown;
+	border-radius: 4px;
+	width: 400px;
+	height: 260px;
+  	margin-top: 100px;
+}
+
+.pic3{
+	border: 2px solid brown;
+	border-radius: 4px;
+	width: 250px;
+	height: 160px;
+}
+
+.pic4{
+	
+	width: 100px;
+	height: 100px;
+}
+
+.row{
+	display: flex;
+}
+
+
+.row .pic4{
+	margin-top: 100px;
+}
+
+h1{
+	color: #FAD172;
+	border-bottom-style: solid;
+	
+}
+
+.fill, form a{
+	color: #FAD172;
+	text-decoration: none;
+}
+
+.fill{
+	text-decoration: none;
+	color: brown;
+	font-size: 18px;
+	padding: 10px 25px;
+	text-align: center; 
+	outline: none;
+	background-color: white;
+	border: none;
+	border-radius: 15px;
+	box-shadow: 0 4px #999;
+	font-weight: bold;
+
+}
+
+.fill:hover{
+	background-color: brown;
+	color: white;
+}
+
+.box{
+	margin-top: 100px;
+}
+
+
+
+footer{
+	background-color: #363636;
+	color: #997950;
+	text-align: center;
+	font-size: 15px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	font-family: "Arial Black", Gadget, sans-serif;
+	margin-top: 290px;
+}
+
+footer a{
+	text-decoration: none;
+	color: white;
+}
+
+
+
+
+
+
+
