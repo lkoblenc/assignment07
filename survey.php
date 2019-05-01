@@ -25,135 +25,135 @@
       <div><img class="pic3" src="images/registerpic.jpg" alt="Register Picture"></div>
       <div> 
 			<h2>What is your favorite house from Game of Thrones?</h2>
-  			<input type="radio" name="favorite" id="stark"><label for="stark">House Stark</label><br>
+  			<input type="radio" name="fav_house" id="fav_house"><label for="stark">House Stark</label><br>
 
-  			<input type="radio" name="favorite" id="targaryen"><label for="targaryen">House Targaryen</label><br>
+  			<input type="radio" name="fav_house" id="fav_house"><label for="targaryen">House Targaryen</label><br>
 
-  			<input type="radio" name="favorite" id="lannister"><label for="lannister">House Lannister</label><br>
+  			<input type="radio" name="fav_house" id="fav_house"><label for="lannister">House Lannister</label><br>
 
-  			<input type="radio" name="favorite" id="greyjoy"><label for="greyjoy">House Greyjoy</label><br>
+  			<input type="radio" name="fav_house" id="fav_house"><label for="greyjoy">House Greyjoy</label><br>
 
-  			<input type="radio" name="favorite" id="other"><label for="other">Other</label>
+  			<input type="radio" name="fav_house" id="fav_house"><label for="other">Other</label>
       </div>
       
       <div>  
   			<h2>Who is your favorite Game of Thrones characters?</h2>
 
-  			<input type="radio" name="fav2" id="ned">
+  			<input type="radio" name="fav_character" id="fav_character">
         <label for="ned">Ned Stark</label><br>
   	
-  			<input type="radio" name="fav2" id="sansa">
+  			<input type="radio" name="fav_character" id="fav_character">
         <label for="sansa">Sansa Stark</label><br>
   			
          
-  			<input type="radio" name="fav2" id="arya">
+  			<input type="radio" name="fav_character" id="fav_character">
   			 <label for="arya">Arya Stark</label><br>
 
           
-  			<input type="radio" name="fav2" id="bran">
+  			<input type="radio" name="fav_character" id="fav_character">
         <label for="bran">Bran Stark</label><br>
   			
-    		<input type="radio" name="fav2" id="daenerys">
+    		<input type="radio" name="fav_character" id="fav_character">
         <label for="daenerys">Daenerys Targaryen</label><br>
   	
-  			<input type="radio" name="fav2" id="rhaegar">
+  			<input type="radio" name="fav_character" id="fav_character">
         <label for="rhaegar">Rhaegar Targaryen</label><br>
   			
          
-  			<input type="radio" name="fav2" id="viserys">
+  			<input type="radio" name="fav_character" id="fav_character">
   			 <label for="viserys">Viserys Targaryen</label><br>
 
           
-  			<input type="radio" name="fav2" id="aegon">
+  			<input type="radio" name="fav_character" id="fav_character">
         <label for="aegon">Aegon Targaryen (Jon Snow)</label><br>
 
 
-          	<input type="radio" name="fav2" id="tywin">
+          	<input type="radio" name="fav_character" id="fav_character">
         <label for="tywin">Tywin Lannister</label><br>
   	
-  			<input type="radio" name="fav2" id="cersei">
+  			<input type="radio" name="fav_character" id="fav_character">
         <label for="cersei">Cersei Lannister</label><br>
   			
          
-  			<input type="radio" name="fav2" id="jaime">
+  			<input type="radio" name="fav_character" id="fav_character">
   			 <label for="jaime">Jaime Lannister</label><br>
 
           
-  			<input type="radio" name="fav2" id="tyrion">
+  			<input type="radio" name="fav_character" id="fav_character">
         <label for="tyrion">Tyrion Lannister</label><br>
 
-      			<input type="radio" name="fav2" id="theon">
+      			<input type="radio" name="fav_character" id="fav_character">
         <label for="theon">Theon Greyjoy</label><br>
   	
-  			<input type="radio" name="fav2" id="euron">
+  			<input type="radio" name="fav_character" id="fav_character">
         <label for="euron">Euron Greyjoy</label><br>
   			
          
-  			<input type="radio" name="fav2" id="yara">
+  			<input type="radio" name="fav_character" id="fav_character">
   			 <label for="yara">Yara Greyjoy</label><br>
 
           
-  			<input type="radio" name="fav2" id="balon">
+  			<input type="radio" name="fav_character" id="fav_character">
         <label for="balon">Balon Greyjoy</label><br>
       </div>
 
       <div>
         <h2>Who is your least favorite Game of Thrones characters? </h2>
 
-  			<input type="radio" name="least" id="ned">
+  			<input type="radio" name="leastfav_character" id="leastfav_character">
         <label for="ned">Ned Stark</label><br>
   	
-  			<input type="radio" name="least" id="sansa">
+  			<input type="radio" name="leastfav_character" id="leastfav_character">
         <label for="sansa">Sansa Stark</label><br>
   			
-  			<input type="radio" name="least" id="arya">
+  			<input type="radio" name="leastfav_character" id="leastfav_character">
   			 <label for="arya">Arya Stark</label><br>
 
-  			<input type="radio" name="least" id="bran">
+  			<input type="radio" name="leastfav_character" id="leastfav_character">
         <label for="bran">Bran Stark</label><br>
   			
-    		<input type="radio" name="least" id="daenerys">
+    		<input type="radio" name="leastfav_character" id="leastfav_character">
         <label for="daenerys">Daenerys Targaryen</label><br>
   	
-  			<input type="radio" name="least" id="rhaegar">
+  			<input type="radio" name="leastfav_character" id="leastfav_character">
         <label for="rhaegar">Rhaegar Targaryen</label><br>
   			
          
-  			<input type="radio" name="least" id="viserys">
+  			<input type="radio" name="leastfav_character" id="leastfav_character">
   			 <label for="viserys">Viserys Targaryen</label><br>
 
           
-  			<input type="radio" name="least" id="aegon">
+  			<input type="radio" name="leastfav_character" id="leastfav_character">
         <label for="aegon">Aegon Targaryen (Jon Snow)</label><br>
 
-        <input type="radio" name="least" id="tywin">
+        <input type="radio" name="leastfav_character" id="leastfav_character">
         <label for="tywin">Tywin Lannister</label><br>
   	
-  			<input type="radio" name="least" id="cersei">
+  			<input type="radio" name="leastfav_character" id="leastfav_character">
         <label for="cersei">Cersei Lannister</label><br>
   			
-  			<input type="radio" name="least" id="jaime">
+  			<input type="radio" name="leastfav_character" id="leastfav_character">
   			 <label for="jaime">Jaime Lannister</label><br>
  
-  			<input type="radio" name="least" id="tyrion">
+  			<input type="radio" name="leastfav_character" id="leastfav_character">
         <label for="tyrion">Tyrion Lannister</label><br>
 
-      	<input type="radio" name="least" id="theon">
+      	<input type="radio" name="leastfav_character" id="leastfav_character">
         <label for="theon">Theon Greyjoy</label><br>
   	
-  			<input type="radio" name="least" id="euron">
+  			<input type="radio" name="leastfav_character" id="leastfav_character">
         <label for="euron">Euron Greyjoy</label><br>
   			    
-  			<input type="radio" name="least" id="yara">
+  			<input type="radio" name="leastfav_character" id="leastfav_character">
   			 <label for="yara">Yara Greyjoy</label><br>
      
-  			<input type="radio" name="least" id="balon">
+  			<input type="radio" name="leastfav_character" id="leastfav_character">
         <label for="balon">Balon Greyjoy</label><br>
       </div>
 	</fieldset><br><br>
 
 	<label for="moment">Favorite Game of Throne Moment:</label><br>
-  		<textarea name="moment" id="moment" placeholder="Favorite Game of Thrones Moment"></textarea><br><br>
+  		<textarea name="fav_moment" id="fav_moment" placeholder="Favorite Game of Thrones Moment"></textarea><br><br>
 
   		<input type="submit" value="Submit Now">
 

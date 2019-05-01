@@ -45,10 +45,29 @@ if ($error != '') {
 	</div>
 
 	<div class="form-group">
-		<div>* required</div>
-		<input class="btn btn-primary" type="submit" name="submit" value="Submit">
+		<label for="fav_house">Favorite House: *</label> 
+		<input class="form-control" type="text" name="fav_house" id="fav_house" value="<?php echo $fav_house; ?>"/>
 	</div>
-</form>
+
+	<div class="form-group">
+		<label for="fav_character">Favorite Character: *</label> 
+		<input class="form-control" type="text" name="fav_character" id="fav_character" value="<?php echo $fav_character; ?>"/>
+	</div>	
+
+	<div class="form-group">
+		<label for="leastfav_character">Least Favorite Character: *</label> 
+		<input class="form-control" type="text" name="leastfav_character" id="leastfav_character" value="<?php echo $leastfav_character; ?>"/>
+	</div>
+
+	<div class="form-group">
+		<label for="fav_memory">Favorite Memory: *</label> 
+		<input class="form-control" type="text" name="fav_memory" id="fav_memory" value="<?php echo $fav_memory; ?>"/>
+	</div>
+	
+	</div>
+		<div>* required</div>
+		<input type="submit" name="submit" id="submit" class="btn btn-primary mb-2" value="Submit">
+	</form>	
 
 <div class="cancel">
 	<a href=".">Cancel</a>

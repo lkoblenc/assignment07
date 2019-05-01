@@ -8,6 +8,8 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     header("location: login.php");
     exit;
 }
+?>
+<?php
 include('renderform.php');
 
 // connect to the database
@@ -21,20 +23,23 @@ if (isset($_POST['submit'])) {
 		$id = $_POST['id'];
 		$firstname = mysqli_real_escape_string($connection, htmlspecialchars($_POST['firstname']));
 		$lastname = mysqli_real_escape_string($connection, htmlspecialchars($_POST['lastname']));
-		$phone = mysqli_real_escape_string($connection, htmlspecialchars($_POST['phone']));
 		$email = mysqli_real_escape_string($connection, htmlspecialchars($_POST['email']));
+		$fav_house = mysqli_real_escape_string($connection, htmlspecialchars($_POST['fav_house']));
+		$fav_character = mysqli_real_escape_string($connection, htmlspecialchars($_POST['fav_character']));
+		$leastfav_character = mysqli_real_escape_string($connection, htmlspecialchars($_POST['leastfav_character']));
+		$fav_moment = mysqli_real_escape_string($connection, htmlspecialchars($_POST['fav_moment']));
 
 		// check that firstname/lastname fields are both filled in
-		if ($firstname == '' || $lastname == '' || $phone == '' || $email == '') {
+		if ($firstname == '' || $lastname == '' || $phone == '' || $email == '' || $fav_house == '' || $fav_character || $leastfav_character || $fav_moment == '') {
 			// generate error message
 			$error = 'ERROR: Please fill in all required fields!';
 
 			//error, display form
-			renderForm($id, $firstname, $lastname, $phone, $email, $error);
+			renderForm($id, $firstname, $lastname, $email, $fav_house, $fav_character, $leastfav_character, $fav_moment, $error);
 
 		} else {
 			// save the data to the database
-			$result = mysqli_query($connection, "UPDATE survey SET firstname='$firstname', lastname='$lastname',phone='$phone', email='$email' WHERE id='$id'");
+			$result = mysqli_query($connection, "UPDATE survey SET firstname='$firstname', lastname='$lastname', email='$email', fav_house='$fav_house', fav_character='$fav_character', leastfav_character='$leastfav_character', fav_moment='$fav_moment' WHERE id='$id'");
 
 			// once saved, redirect back to the homepage page to view the results
 			header("Location: index.php");
@@ -57,11 +62,14 @@ if (isset($_POST['submit'])) {
 			// get data from db
 			$firstname = $row['firstname'];
 			$lastname = $row['lastname'];
-			$phone = $row['phone'];
 			$email = $row['email'];
+			$fav_house = $row['fav_house'];
+			$fav_character = $row['fav_character'];
+			$leastfav_character = $row['leastfav_character'];
+			$fav_moment = $row['fav_moment'];
 
 			// show form
-			renderForm($id, $firstname, $lastname, $phone, $email, '');
+			renderForm($id, $firstname, $lastname, $email, $fav_house, $fav_character, $leastfav_character, $fav_moment'');
 		} else {
 			// if no match, display result
 			echo "No results!";
