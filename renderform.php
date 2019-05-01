@@ -1,6 +1,6 @@
 <?php
 // creates the edit record form
-function renderForm($id, $firstname, $lastname, $phone, $email, $error) {
+function renderForm($id, $firstname, $lastname, $email, $q1, $q2, $q3, $q4, $error) {
 ?>
 <!doctype html>
 <html>
@@ -37,11 +37,6 @@ if ($error != '') {
 	<div class="form-group">
 		<label for="lastname">Last Name: *</label> 
 		<input class="form-control" type="text" name="lastname" if="lastname" value="<?php echo $lastname; ?>"/>
-	</div>
-
-	<div class="form-group">
-		<label for="phone">Phone: *</label> 
-		<input class="form-control" type="text" name="phone" id="phone" value="<?php echo $phone; ?>"/>
 	</div>
 
 	<div class="form-group">

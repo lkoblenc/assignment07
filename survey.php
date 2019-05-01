@@ -15,12 +15,6 @@
   		<label for="email">Email:</label><br>
   		<input type="email" name="email" id="email" placeholder="Email"><br>
 
-  		<label for="city">City:</label><br>
-  		<input type="text" name="city" id="city" placeholder="City"><br>
-
-  		<label for="state">State:</label><br>
-  		<input type="text" name="state" id="state" placeholder="State"><br>
-
 	</fieldset><br><br>
 
 	<fieldset>
@@ -43,124 +37,117 @@
       </div>
       
       <div>  
-  			<h2>Who are your top 5 favorite Game of Thrones characters?</h2>
+  			<h2>Who is your favorite Game of Thrones characters?</h2>
 
-  			<input type="checkbox" name="ned" id="ned">
+  			<input type="radio" name="fav2" id="ned">
         <label for="ned">Ned Stark</label><br>
   	
-  			<input type="checkbox" name="sansa" id="sansa">
+  			<input type="radio" name="fav2" id="sansa">
         <label for="sansa">Sansa Stark</label><br>
   			
          
-  			<input type="checkbox" name="arya" id="arya">
+  			<input type="radio" name="fav2" id="arya">
   			 <label for="arya">Arya Stark</label><br>
 
           
-  			<input type="checkbox" name="bran" id="bran">
+  			<input type="radio" name="fav2" id="bran">
         <label for="bran">Bran Stark</label><br>
   			
-    		<input type="checkbox" name="daenerys" id="daenerys">
+    		<input type="radio" name="fav2" id="daenerys">
         <label for="daenerys">Daenerys Targaryen</label><br>
   	
-  			<input type="checkbox" name="rhaegar" id="rhaegar">
+  			<input type="radio" name="fav2" id="rhaegar">
         <label for="rhaegar">Rhaegar Targaryen</label><br>
   			
          
-  			<input type="checkbox" name="viserys" id="viserys">
+  			<input type="radio" name="fav2" id="viserys">
   			 <label for="viserys">Viserys Targaryen</label><br>
 
           
-  			<input type="checkbox" name="aegon" id="aegon">
+  			<input type="radio" name="fav2" id="aegon">
         <label for="aegon">Aegon Targaryen (Jon Snow)</label><br>
 
 
-          	<input type="checkbox" name="tywin" id="tywin">
+          	<input type="radio" name="fav2" id="tywin">
         <label for="tywin">Tywin Lannister</label><br>
   	
-  			<input type="checkbox" name="cersei" id="cersei">
+  			<input type="radio" name="fav2" id="cersei">
         <label for="cersei">Cersei Lannister</label><br>
   			
          
-  			<input type="checkbox" name="jaime" id="jaime">
+  			<input type="radio" name="fav2" id="jaime">
   			 <label for="jaime">Jaime Lannister</label><br>
 
           
-  			<input type="checkbox" name="tyrion" id="tyrion">
+  			<input type="radio" name="fav2" id="tyrion">
         <label for="tyrion">Tyrion Lannister</label><br>
 
-      			<input type="checkbox" name="theon" id="theon">
+      			<input type="radio" name="fav2" id="theon">
         <label for="theon">Theon Greyjoy</label><br>
   	
-  			<input type="checkbox" name="euron" id="euron">
+  			<input type="radio" name="fav2" id="euron">
         <label for="euron">Euron Greyjoy</label><br>
   			
          
-  			<input type="checkbox" name="yara" id="yara">
+  			<input type="radio" name="fav2" id="yara">
   			 <label for="yara">Yara Greyjoy</label><br>
 
           
-  			<input type="checkbox" name="balon" id="balon">
+  			<input type="radio" name="fav2" id="balon">
         <label for="balon">Balon Greyjoy</label><br>
       </div>
 
       <div>
-        <h2>Who are your 5 least favorite Game of Thrones characters? </h2>
+        <h2>Who is your least favorite Game of Thrones characters? </h2>
 
-  			<input type="checkbox" name="ned" id="ned">
+  			<input type="radio" name="least" id="ned">
         <label for="ned">Ned Stark</label><br>
   	
-  			<input type="checkbox" name="sansa" id="sansa">
+  			<input type="radio" name="least" id="sansa">
         <label for="sansa">Sansa Stark</label><br>
   			
-         
-  			<input type="checkbox" name="arya" id="arya">
+  			<input type="radio" name="least" id="arya">
   			 <label for="arya">Arya Stark</label><br>
 
-          
-  			<input type="checkbox" name="bran" id="bran">
+  			<input type="radio" name="least" id="bran">
         <label for="bran">Bran Stark</label><br>
   			
-    		<input type="checkbox" name="daenerys" id="daenerys">
+    		<input type="radio" name="least" id="daenerys">
         <label for="daenerys">Daenerys Targaryen</label><br>
   	
-  			<input type="checkbox" name="rhaegar" id="rhaegar">
+  			<input type="radio" name="least" id="rhaegar">
         <label for="rhaegar">Rhaegar Targaryen</label><br>
   			
          
-  			<input type="checkbox" name="viserys" id="viserys">
+  			<input type="radio" name="least" id="viserys">
   			 <label for="viserys">Viserys Targaryen</label><br>
 
           
-  			<input type="checkbox" name="aegon" id="aegon">
+  			<input type="radio" name="least" id="aegon">
         <label for="aegon">Aegon Targaryen (Jon Snow)</label><br>
 
-
-          	<input type="checkbox" name="tywin" id="tywin">
+        <input type="radio" name="least" id="tywin">
         <label for="tywin">Tywin Lannister</label><br>
   	
-  			<input type="checkbox" name="cersei" id="cersei">
+  			<input type="radio" name="least" id="cersei">
         <label for="cersei">Cersei Lannister</label><br>
   			
-         
-  			<input type="checkbox" name="jaime" id="jaime">
+  			<input type="radio" name="least" id="jaime">
   			 <label for="jaime">Jaime Lannister</label><br>
-
-          
-  			<input type="checkbox" name="tyrion" id="tyrion">
+ 
+  			<input type="radio" name="least" id="tyrion">
         <label for="tyrion">Tyrion Lannister</label><br>
 
-      			<input type="checkbox" name="theon" id="theon">
+      	<input type="radio" name="least" id="theon">
         <label for="theon">Theon Greyjoy</label><br>
   	
-  			<input type="checkbox" name="euron" id="euron">
+  			<input type="radio" name="least" id="euron">
         <label for="euron">Euron Greyjoy</label><br>
-  			
-         
-  			<input type="checkbox" name="yara" id="yara">
+  			    
+  			<input type="radio" name="least" id="yara">
   			 <label for="yara">Yara Greyjoy</label><br>
-
-          
-  			<input type="checkbox" name="balon" id="balon">
+     
+  			<input type="radio" name="least" id="balon">
         <label for="balon">Balon Greyjoy</label><br>
       </div>
 	</fieldset><br><br>

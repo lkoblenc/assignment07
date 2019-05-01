@@ -19,7 +19,7 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
 	$id = $_GET['id'];
 
 	// delete the entry
-	$result = mysqli_query($connection, "DELETE FROM urcscon3_rchestr WHERE id=$id");
+	$result = mysqli_query($connection, "DELETE FROM survey WHERE id=$id");
 
 	// redirect back to the homepage to see the results
 	header("Location: index.php");

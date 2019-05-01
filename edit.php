@@ -34,7 +34,7 @@ if (isset($_POST['submit'])) {
 
 		} else {
 			// save the data to the database
-			$result = mysqli_query($connection, "UPDATE urcscon3_rchestr SET firstname='$firstname', lastname='$lastname',phone='$phone', email='$email' WHERE id='$id'");
+			$result = mysqli_query($connection, "UPDATE survey SET firstname='$firstname', lastname='$lastname',phone='$phone', email='$email' WHERE id='$id'");
 
 			// once saved, redirect back to the homepage page to view the results
 			header("Location: index.php");
@@ -49,7 +49,7 @@ if (isset($_POST['submit'])) {
 	if (isset($_GET['id']) && is_numeric($_GET['id']) && $_GET['id'] > 0) {
 		// query db
 		$id = $_GET['id'];
-		$result = mysqli_query($connection, "SELECT * FROM urcscon3_rchestr WHERE id=$id");
+		$result = mysqli_query($connection, "SELECT * FROM survey WHERE id=$id");
 		$row = mysqli_fetch_array( $result );
 
 		// check that the 'id' matches up with a row in the databse
