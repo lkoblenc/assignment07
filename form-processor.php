@@ -16,20 +16,22 @@ $subject = "Games of Thrones Survey";
 // the words inside each $_POST[] must match a name="" attribute from the 
 //   HTML form EXACTLY...
 // these are from the text INPUT fields...
-$name = Trim(stripslashes($_POST['name'])); 
+$name = Trim(stripslashes($_POST['firstname'])); 
+$lastname = Trim(stripslashes($_POST['lastname']));
 $email = Trim(stripslashes($_POST['email'])); 
-$address = Trim(stripslashes($_POST['address'])); 
 // this is from all the INPUT type="radio" fields...
-$favorite = $_POST['favorite']; 
+$fav_house= $_POST['fav_house']; 
+$fav_character = $_POST['fav_character'];
+$leastfav_character = $_POST['leastfav_character'];
 // notice: no matter how many radio buttons, there's only one answer
-// // this is from the TEXTAREA field...
-// $_____________ = Trim(stripslashes($_POST['_____________'])); 
+// this is from the TEXTAREA field...
+$fav_moment = Trim(stripslashes($_POST['fav_moment'])); 
 // **********************************
 // SECTION TWO: build the email body
 // **********************************
 // $body = "Information"; // initialize the variable, then start concatenating
 //             // backslash-n means new-line in emails
-$body .= "Hi"; //...a label
+$body .= "Hi "; //...a label
 $body .= $name;      //...a variable
 $body .= ",\n\n";              //...a new line
 $body .= "Thank you for visiting the website and filling out our survey\n";
@@ -38,23 +40,20 @@ $body .= $subject;      //...a variable
 $body .= ".\n\n";              //...a new line
  
 $body .= "What is your favorite house from Game of Thrones? \n";       // a heading for your radio button section
-$favorite .= $_POST['favorite'];  
-$body .= "You have selected:".  $favorite.".";         // the (one) radio button variable
+$body .= $fav_house;         // the (one) radio button variable
 $body .= "\n\n";
 
-$body .= "Who are your top 5 favorite Game of Thrones characters? \n";       // a heading for your radio button section
-$fav2 .= $_POST['fav2'];  
-$body .= "You selected:".  $fav2.".";         // the (one) radio button variable
+$body .= "Who are your top 5 favorite Game of Thrones characters? \n";       // a heading for your radio button section 
+$body .= $fav_character;         // the (one) radio button variable
 $body .= "\n\n";
 
-$body .= "Have you ever heard of Michelin restaurant guides before? \n";       // a heading for your radio button section
-$least .= $_POST['least'];  
-$body .= "You selected:".  $least.".";         // the (one) radio button variable
+$body .= "Have you ever heard of Michelin restaurant guides before? \n";       // a heading for your radio button section 
+$body .= $leastfav_character;         // the (one) radio button variable
 $body .= "\n\n";
 
 // This is for your TEXTAREA
 $body .= "Favorite Game of Throne Moment: \n";       // a heading for your text area
-$body .= "You wrote:".    $moment;            // the variable for your text area
+$body .= $fav_moment;            // the variable for your text area
 $body .= "\n";
 
 // **********************************
