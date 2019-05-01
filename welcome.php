@@ -21,7 +21,7 @@ session_start();?>
     <p>
         <a href="logout.php" class="btn btn-danger">Sign Out of Your Account</a>
     </p>
-<?php } ?>
+<?php ?>
 
 <?php
 // connect to the database
@@ -37,10 +37,10 @@ $result = mysqli_query($connection, "SELECT * FROM survey");
     <th scope="col">First Name</th>
     <th scope="col">Last Name</th>
     <th scope="col">Email</th>
-    <th scope="col">Q1</th>
-    <th scope="col">Q2</th>
-    <th scope="col">Q3</th>
-    <th scope="col">Q4</th>
+    <th scope="col">Favorite House</th>
+    <th scope="col">Favorite Character</th>
+    <th scope="col">Leat Favorite Character</th>
+    <th scope="col">Favorite Moment</th>
     <th scope="col">Date</th>
 
     <?php if(isset($_SESSION['username'])) { ?>
@@ -48,6 +48,9 @@ $result = mysqli_query($connection, "SELECT * FROM survey");
     <?php } ?>
   </tr>
   </thead>
+  </body>
+</html>
+
 <?php
 // loop through results of database query, displaying them in the table
 while($row = mysqli_fetch_array( $result )) {
@@ -58,10 +61,10 @@ while($row = mysqli_fetch_array( $result )) {
     <td><?php echo $row['firstname']; ?></td>
     <td><?php echo $row['lastname']; ?></td>
     <td><?php echo $row['email']; ?></td>
-    <td><?php echo $row['q1']; ?></td>
-    <td><?php echo $row['q2']; ?></td>
-    <td><?php echo $row['q3']; ?></td>
-    <td><?php echo $row['q4']; ?></td>
+    <td><?php echo $row['fav_house']; ?></td>
+    <td><?php echo $row['fav_character']; ?></td>
+    <td><?php echo $row['leastfav_character']; ?></td>
+    <td><?php echo $row['fav_moment']; ?></td>
     <td><?php echo $row['date']; ?></td>
     <?php if(isset($_SESSION['username'])) { ?>
       <td><a href="edit.php?id=<?php echo $row['id']; ?>">Edit</a></td>
@@ -88,6 +91,3 @@ while($row = mysqli_fetch_array( $result )) {
   mysqli_free_result($result);
   mysqli_close($connection);
 ?>
-
-</body>
-</html>
