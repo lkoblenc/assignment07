@@ -6,7 +6,7 @@ session_start();?>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <title>Survey Responses</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
     <style>
@@ -14,14 +14,11 @@ session_start();?>
     </style>
 </head>
 
-<body>
-    <div class="page-header">
-        <h1>Welcome <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b>.</h1>
-    </div>
-    <p>
-        <a href="logout.php" class="btn btn-danger">Sign Out of Your Account</a>
-    </p>
-<?php ?>
+ <?php if(isset($_SESSION['username'])) { ?>
+    <a href="logout.php">Logout</a>
+    <?php } else { ?>
+    <a href="login.php">Login</a>
+    <?php } ?>
 
 <?php
 // connect to the database
@@ -71,7 +68,8 @@ while($row = mysqli_fetch_array( $result )) {
       <td><a onclick="return confirm('Are you sure you want to delete ID: <?php echo $row["id"]; ?>?')" href="delete.php?id=<?php echo $row['id']; ?>">Delete</a></td>
     <?php } ?>
   </tr>
-</tbody>
+</body>
+
 <?php
 // close the loop
 }

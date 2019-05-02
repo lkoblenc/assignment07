@@ -1,6 +1,12 @@
 <?php
+
 session_start();
-// connect to the database
+ 
+// Check if the user is logged in, if not then redirect him to login page
+if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
+    header("location: login.php");
+    exit;
+}
 
 include('renderform.php');
 
@@ -19,19 +25,20 @@ if (isset($_POST['submit'])) {
 	$fav_moment = mysqli_real_escape_string($connection, htmlspecialchars($_POST['fav_moment']));
 
 	// check to make sure both fields are entered
-	if ($firstname == '' || $lastname == '' || $email == '' $fav_house == '' $fav_character == '' $leastfav_character == '' $fav_moment == '') {
+	if ($firstname == '' || $lastname == '' || $email == '' || $fav_house == '' || $fav_character == '' || $leastfav_character == '' || $fav_moment == '') {
 		// generate error message
 		$error = 'ERROR: Please fill in all required fields!';
 
 		// if either field is blank, display the form again
-		renderForm($id, $firstname, $lastname, $email, $fav_house, $fav_character, $leastfav_character, $fav_moment, $error);
+
+			renderForm($id, $firstname, $lastname, $email, $fav_house, $fav_character, $leastfav_character, $fav_moment, $error);
 
 	} else {
 		// save the data to the database
 		$result = mysqli_query($connection, "INSERT INTO survey (firstname, lastname, email, fav_house, fav_character, leastfav_character, fav_moment) VALUES ('$firstname', '$lastname', '$email', '$fav_house', '$fav_character', '$leastfav_character', '$fav_moment')");
 
 		// once saved, redirect back to the view page
-		header("Location: index.php");
+		header("Location: welcome.php");
 	}
 } else {
 	// if the form hasn't been submitted, display the form

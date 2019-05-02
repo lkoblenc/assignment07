@@ -1,12 +1,12 @@
 <?php
 // creates the edit record form
-function renderForm($id, $firstname, $lastname, $email, $q1, $q2, $q3, $q4, $error) {
+function renderForm($id, $firstname, $lastname, $email, $fav_house, $fav_character, $leastfav_character, $fav_memory, $error) {
 ?>
 <!doctype html>
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Edit Record</title>
+	<title>Survey Records</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
 	<style type="text/css">
 		.cancel {
@@ -15,19 +15,22 @@ function renderForm($id, $firstname, $lastname, $email, $q1, $q2, $q3, $q4, $err
 	</style>
 </head>
 <body>
-	<?php session_start(); ?>
+
 <div class="container">
 <h1> Add or Edit a Record </h1>
+
 <?php
-// if there are any errors, display them
 if ($error != '') {
-	echo '<div style="padding:4px; border:1px solid red; color:red;">'.$error.'</div>';
+	echo '<div style="padding:10px; border:5px black; color:red;">'.$error.'</div>';
 }
 ?>
+
 <form action="" method="post">
+	<div class="form-group">
 	<input type="hidden" name="id" value="<?php echo $id; ?>">
 	<strong>ID:</strong> 
 	<?php echo $id; ?>
+</div>
 
 	<div class="form-group">
 		<label for="firstname">First Name: *</label> 
@@ -69,7 +72,7 @@ if ($error != '') {
 		<input type="submit" name="submit" id="submit" class="btn btn-primary mb-2" value="Submit">
 	</form>	
 
-<div class="cancel">
+<div>
 	<a href=".">Cancel</a>
 </div>
 

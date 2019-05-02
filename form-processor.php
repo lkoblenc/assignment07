@@ -1,4 +1,21 @@
 <?php
+
+include_once'connect-db.php';
+
+ 	 $firstname = $_POST['firstname'];
+	 $lastname = $_POST['lastname'];
+	 $email = $_POST['email'];
+	 $fav_house = $_POST['fav_house'];
+	 $fav_character = $_POST['fav_character'];
+	 $leastfav_character = $_POST['leastfav_character'];
+	 $fav_moment = $_POST['fav_moment'];
+
+     // save the data to the database
+		$result = mysqli_query($connection, "INSERT INTO survey (firstname,lastname,email,fav_house,fav_character,leastfav_character,fav_moment) VALUES ('$firstname','$lastname','$email', '$fav_house', '$fav_character', '$leastfav_character', '$fav_moment')");
+       // header("location: survey.php submit=success");
+    ?>
+
+<?php
 // NOTICE: this part of this HTML document is just one PHP tag
 //  This script doesn't output anything to the user's browser
 //  so there is no DOCTYPE or any of the usual HTML things
@@ -10,10 +27,7 @@
 $emailFrom = "yding25@u.rochester.edu"; // use YOUR email for both lines 12 and 13
 $emailTo = $_POST['email'];
 $subject = "Games of Thrones Survey";
-// $txt = "Dear,";
-// for the following lines of code, grab the data being passed 
-//   from the method="post" in the HTML form and hold it in a variable
-// the words inside each $_POST[] must match a name="" attribute from the 
+
 //   HTML form EXACTLY...
 // these are from the text INPUT fields...
 $name = Trim(stripslashes($_POST['firstname'])); 
@@ -72,6 +86,9 @@ mail($emailTo, $subject, $body, "From: <$emailFrom>");
      for the user
      ********************************** -->
 
+<!DOCTYPE HTML>
+<html>
+
 <?php include "inc/header.php";?>
 
 <body>
@@ -82,3 +99,8 @@ mail($emailTo, $subject, $body, "From: <$emailFrom>");
 <?php include "inc/footer.php";?>
 
 </body>
+</html>
+
+<?php
+	mysqli_close($connection);
+?>

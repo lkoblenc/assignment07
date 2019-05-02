@@ -42,7 +42,7 @@ if (isset($_POST['submit'])) {
 			$result = mysqli_query($connection, "UPDATE survey SET firstname='$firstname', lastname='$lastname', email='$email', fav_house='$fav_house', fav_character='$fav_character', leastfav_character='$leastfav_character', fav_moment='$fav_moment' WHERE id='$id'");
 
 			// once saved, redirect back to the homepage page to view the results
-			header("Location: index.php");
+			header("Location: welcome.php");
 		}
 	} else {
 		// if the 'id' isn't valid, display an error
