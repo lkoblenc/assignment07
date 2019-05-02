@@ -13,9 +13,7 @@ include_once'connect-db.php';
      // save the data to the database
 		$result = mysqli_query($connection, "INSERT INTO survey (firstname,lastname,email,fav_house,fav_character,leastfav_character,fav_moment) VALUES ('$firstname','$lastname','$email', '$fav_house', '$fav_character', '$leastfav_character', '$fav_moment')");
        // header("location: survey.php submit=success");
-    ?>
 
-<?php
 // NOTICE: this part of this HTML document is just one PHP tag
 //  This script doesn't output anything to the user's browser
 //  so there is no DOCTYPE or any of the usual HTML things
